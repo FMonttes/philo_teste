@@ -6,7 +6,7 @@
 /*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 22:00:42 by felipe            #+#    #+#             */
-/*   Updated: 2024/06/24 22:03:23 by felipe           ###   ########.fr       */
+/*   Updated: 2024/06/26 17:13:14 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void    smart_usleep(long time, t_data *data)
         elapsed = gettime(MICROSECONDS) - start;
         rem = time - elapsed;
         if (rem > 1e3)
-            usleep(time / 2);
+            usleep(rem / 2);
         else
             while (gettime(MICROSECONDS) - start < time)
                 ;

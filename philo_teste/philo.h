@@ -6,7 +6,7 @@
 /*   By: felipe <felipe@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/24 20:41:17 by felipe            #+#    #+#             */
-/*   Updated: 2024/06/25 20:42:24 by felipe           ###   ########.fr       */
+/*   Updated: 2024/06/26 17:44:21 by felipe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,3 +118,6 @@ void *monitor(void *data);
 void increase_long(pthread_mutex_t *mutex, long *dest);
 bool all_threads_running(pthread_mutex_t *mutex, long *ths, long philo_nbr);
 void increase_long(pthread_mutex_t *mutex, long *var);
+void clean(t_data *data);
+void think(t_philo *philo, bool odd);
+void de_philo(t_philo *philo);
